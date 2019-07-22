@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from cgi import parse_qs
 
 bind = "0.0.0.0:8080"
