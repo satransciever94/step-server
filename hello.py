@@ -10,7 +10,7 @@ def wsgi_application(environ, start_response):
     otvetka = b''
     for key in zapros:
         for value in zapros[key]:
-            otvetka += key+'='+value+'\n'
+            otvetka += (key+'='+value+'\n').encode('utf-8')
     otvetka = otvetka[:len(otvetka)-1]
     # подготовка и передача ответа
     status = '200 OK'
